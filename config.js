@@ -9,7 +9,7 @@ const config = {
   description:
     "Description",
   sideBarInfo: ["Nome", "City", "Type", "Costruzione"],
-    popupInfo: ["Nome", "City"],
+    popupInfo: ["Nome"],
   filters: [
     {
       type: "dropdown",
