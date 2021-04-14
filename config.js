@@ -3,13 +3,13 @@ const config = {
   accessToken:
     "pk.eyJ1IjoibWFwbW9saW5hY2giLCJhIjoiY2tuaDVyNjBxM2J1cDJycDlmMjJpczN3dyJ9.hoSf2ecIgPRw1R0ih3txRQ",
   CSV: "./data.csv",
-    center: [45.99229, 8.97483], 
+  center: [8.97483, 45.99229],
   zoom: 5,
   title: "Molina Portfolio",
   description:
     "Description",
-  sideBarInfo: ["Location_Name", "City", "Type", "Costruzione"],
-    popupInfo: ["Location_Name", "City"],
+  sideBarInfo: ["Nome", "City", "Type", "Costruzione"],
+    popupInfo: ["Nome", "City"],
   filters: [
     {
       type: "dropdown",
