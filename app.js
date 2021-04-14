@@ -292,7 +292,27 @@ function applyFilters() {
           filteredGeojson.features.splice(idx, 1);
         });
       }
-    } 
+    } else {
+      geojsonData.features.forEach(function (feature) {
+        let selected = true;
+        geojSelectFilters.forEach(function (filter) {
+          if (
+            !feature.properties[filter[0]].includes(filter[1]) &&
+            selected === true
+          ) {
+            selected = false;
+          }
+        });
+        if (
+          selected === true &&
+          filteredGeojson.features.filter(
+            (f) => f.properties.id === feature.properties.id
+          ).length === 0
+        ) {
+          filteredGeojson.features.push(feature);
+        }
+      });
+    }
 
     map.getSource("locationData").setData(filteredGeojson);
     buildLocationList(filteredGeojson);
