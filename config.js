@@ -8,13 +8,13 @@ const config = {
   title: "Title",
   description:
     "Lorem Ipsum quam lorem Ipsum",
-  sideBarInfo: ["Location_Name", "City", "Costruzione"],
+  sideBarInfo: ["Location_Name", "City", "Costruzione", "url"],
   popupInfo: ["Location_Name"],
   filters: [
     {
       type: "dropdown",
-      title: "Type",
-      columnHeader: "Tipologia",
+      title: "Tipologia:",
+      columnHeader: "Type",
       listItems: [
         "Ampliamento",
         "Ristrutturazione",
