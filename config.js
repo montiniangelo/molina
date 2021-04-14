@@ -13,7 +13,7 @@ const config = {
   filters: [
     {
       type: "dropdown",
-      title: "Type:",
+      title: "Type",
       columnHeader: "Tipologia",
       listItems: [
         "Ampliamento",
@@ -22,12 +22,6 @@ const config = {
         "Concorso",
         "Studio sicurezza",
       ],
-    },
-    {
-      type: "checkbox",
-      title: "Promozione: ",
-      columnHeader: "Promotion", // Case sensitive - must match spreadsheet entry
-      listItems: ["Si", "No"], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
     },
   ],
 };
