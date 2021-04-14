@@ -8,7 +8,7 @@ const config = {
   title: "Title",
   description:
     "Lorem Ipsum quam lorem Ipsum",
-  sideBarInfo: ["Location_Name", "City", "Costruzione", "url"],
+  sideBarInfo: ["Location_Name", "City", "Costruzione", "Url"],
   popupInfo: ["Location_Name"],
   filters: [
     {
